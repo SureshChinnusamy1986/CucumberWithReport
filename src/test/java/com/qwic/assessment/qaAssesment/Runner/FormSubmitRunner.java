@@ -1,0 +1,16 @@
+
+package com.qwic.assessment.qaAssesment.Runner;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(plugin= { "pretty", "html:target/cucumber-html-report", "json:target/cucumber.json" },
+        features="src/test/resources/Feature",
+        glue="com.qwic.assessment.qaAssesment",
+tags="@FormSubmit")
+
+public class FormSubmitRunner {
+
+}
